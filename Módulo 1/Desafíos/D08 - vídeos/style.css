@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(25, 24, 24);
+    text-align: center;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+iframe {
+    margin-bottom: 20px;
+}
+
+a {
+    color: aliceblue;
+    height: 20px;
+}
+
+img {
+    height: 40px;
+    margin-top: 15px;
+}

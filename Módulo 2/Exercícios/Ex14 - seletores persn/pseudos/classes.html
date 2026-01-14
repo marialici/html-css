@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes com CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+        }
+
+        p:hover {
+            color: blue;
+            font-weight: bold;
+        }
+
+        a:active {
+            color: red;
+            text-decoration: underline;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: #f0f0f0;
+            width: 200px;
+        }
+
+        div p {
+            display: none;
+        }
+
+        div:hover p {
+            display: block;
+            color: green;
+            font-style: italic;
+        }
+
+        div:hover {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de Pseudo-classes com CSS</h1>
+
+    <p>Passe o mouse sobre este texto para ver a pseudo-classe <code>:hover</code> em ação.</p>
+    <a href="#">Este é um link. Clique para ver a pseudo-classe <code>:active</code>.</a>
+
+    <!-- A pseudo-classe :nth-child(odd) faz com que os elementos ímpares de uma lista tenham uma cor de fundo diferente -->
+    <h2>Lista com Pseudo-classe <code>:nth-child(odd)</code></h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <h2>Texto oculto</h2>
+    <div>
+        Passando o mouse sobre este texto, você verá o texto oculto.
+        <p id="oculto">Texto oculto revelado!</p>
+    </div>
+
+    <h2>Usando caixas</h2>
+    <header>
+        <div style="border: 2px solid black; padding: 10px; width: 200px;">
+            Passe o mouse sobre esta caixa para ver o efeito da pseudo-classe <code>:hover</code>.
+            <p>Texto dentro da caixa que aparece ao passar o mouse.</p>
+        </div>
+    </header>
+</body>
+
+</html>

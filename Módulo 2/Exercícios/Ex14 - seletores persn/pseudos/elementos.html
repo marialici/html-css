@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: cadetblue;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkcyan;
+        }
+
+        a:hover {
+            color: coral;
+            text-decoration: underline;
+        }
+
+        a::after {
+            content: " ↗";
+            font-size: 80%;
+        }
+
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 2px solid #ccc;
+        }
+
+        #texto::first-letter {
+            font-size: 200%;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testando pseudo-elementos</h1>
+
+    <ul>
+        <li><a target="_blank" href="https://github.com/marialici">Repositório Github</a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/in/mariaaliciasb">Perfil no LinkedIn</a></li>
+        <li><a target="_blank" href="https://youtube.com/@cursoemvideo?si=Jxph9IBVIGODYIyF">Canal do curso em vídeo</a>
+        </li>
+    </ul>
+    <hr>
+
+    <h2>Capítulo de livro</h2>
+    <p id="texto">Os pseudo-elementos em CSS permitem estilizar partes específicas de um elemento sem a necessidade de
+        adicionar elementos HTML extras. Eles são úteis para aplicar estilos a partes do conteúdo, como a primeira letra
+        ou linha de um parágrafo, ou para inserir conteúdo antes ou depois de um elemento.
+    </p>
+</body>
+
+</html>
