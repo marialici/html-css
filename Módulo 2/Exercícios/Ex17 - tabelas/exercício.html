@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabelas</title>
+
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 20px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            caption {
+                font-size: 1.3em;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .titulo {
+                text-align: center;
+            }
+
+            th,
+            td {
+                border: 1px solid black;
+                padding: 10px;
+                text-align: left;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Exercício de Tabelas</h1>
+
+        <table>
+            <caption>Filmes Favoritos</caption>
+            <thead>
+                <tr>
+                    <th class="titulo" scope="col">Grupo</th>
+                    <th class="titulo" scope="col">Nome</th>
+                    <th class="titulo" scope="colgroup" colspan="3">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="titulo" scope="rowgroup" rowspan="3">Mulheres</th>
+                    <td>Ana Maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                    <td>Clara Souza Lima</td>
+                    <td>Titanic</td>
+                    <td>Interestelar</td>
+                    <td>Matrix</td>
+                </tr>
+                <tr>
+                    <td>Beatriz Oliveira</td>
+                    <td>O Exorcista</td>
+                    <td>It: A Coisa</td>
+                    <td>Corra!</td>
+                </tr>
+                <tr>
+                    <th class="titulo" scope="rowgroup" rowspan="3">Homens</th>
+                    <td>Bruno Henrique</td>
+                    <td>Intocável</td>
+                    <td>Batman</td>
+                    <td>Homem-Aranha</td>
+                </tr>
+                <tr>
+                    <td>Carlos Eduardo</td>
+                    <td>Star Wars 5</td>
+                    <td>John Wick</td>
+                    <td>Inception</td>
+                </tr>
+                <tr>
+                    <td>Daniel Silva</td>
+                    <td>Oblivion</td>
+                    <td>Guardiões da Galáxia</td>
+                    <td>Duna</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th class="titulo" scope="row" colspan="4">Total</th>
+                    <td>1000</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </body>
+
+</html>
