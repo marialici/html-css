@@ -16,9 +16,16 @@
     <body>
         <h1>Meu primeiro formulário</h1>
 
-        <form>
-            <p>Nome: <input type="text" name="nome"></p>
-            <p>Sobrenome: <input type="text" name="sobrenome"></p>
+        <form action="cadastro.php" autocomplete="off">
+            <p>
+                <label for="i-nome">Nome:</label>
+                <input type="text" name="nome" id="i-nome">
+            </p>
+            <p>
+                <label for="i-sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="i-sobrenome">
+            </p>
+
             <input type="submit" value="Enviar">
         </form>
     </body>
