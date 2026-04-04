@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários - cores, range e file</title>
+    </head>
+
+    <body>
+        <h1>Exemplo de Formulário</h1>
+
+        <form action="php/cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="i-cor">Cor Favorita:</label>
+                <input type="color" name="cor" id="i-cor" value="#009dff">
+            </p>
+
+            <p>
+                <label for="i-range">Nível de Satisfação:</label>
+                <input type="range" name="valor" id="i-range" min="1" max="5" value="3">
+            </p>
+
+            <p>
+                <label for="i-arquivo">Selecione um arquivo:</label>
+                <input type="file" name="arquivo" id="i-arquivo">
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </body>
+
+</html>
