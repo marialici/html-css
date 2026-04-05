@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários - outros elementos</title>
+    </head>
+
+    <body>
+        <h1>Outros elementos</h1>
+        <form action="php/cadastro.php" method="post">
+            <p>
+                <label for="i-estado">Estado:</label>
+                <select name="estado" id="i-estado">
+                    <option value="" selected>Selecione</option>
+
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="PE">Pernambuco</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="i-prof">Profissão:</label>
+                <input type="text" name="prof" id="i-prof" list="profissoes">
+
+                <datalist id="profissoes">
+                    <option value="Engenheiro">
+                    <option value="Médico">
+                    <option value="Professor">
+                    <option value="Advogado">
+                    <option value="Desenvolvedor">
+                </datalist>
+            </p>
+
+            <p>
+                <label for="i-msg">Mensagem:</label><br>
+                <textarea name="msg" id="i-msg" cols="30" rows="10" placeholder="Deixe seu comentário aqui..."></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </body>
+
+</html>
