@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox - Alinhamento Individual</title>
+
+        <style>
+            .container {
+                height: 400px;
+                background-color: #612e2e;
+                padding: 5px;
+
+                display: flex;
+                flex-flow: row wrap;
+                align-items: flex-start;
+            }
+
+            .item {
+                background-color: #c55d5d;
+                color: white;
+                padding: 20px;
+                border: 1px solid black;
+
+                text-align: center;
+            }
+
+            #i1 {
+                align-self: stretch;
+            }
+
+            #i2 {
+                align-self: auto;
+            }
+
+            #i3 {
+                align-self: flex-end;
+            }
+
+            #i4 {
+                align-self: flex-start;
+            }
+
+            #i5 {
+                align-self: center;
+            }
+
+            #i6 {
+                align-self: flex-start;
+            }
+
+            #i7 {
+                align-self: stretch;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="item" id="i1">Item 1</div>
+            <div class="item" id="i2">Item 2</div>
+            <div class="item" id="i3">Item 3</div>
+            <div class="item" id="i4">Item 4</div>
+            <div class="item" id="i5">Item 5</div>
+            <div class="item" id="i6">Item 6</div>
+            <div class="item" id="i7">Item 7</div>
+        </div>
+    </body>
+
+</html>
