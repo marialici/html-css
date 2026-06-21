@@ -21,22 +21,27 @@
                 border: 1px solid black;
 
                 text-align: center;
-                flex-basis: 200px;
             }
 
             #caixaA {
+                /*flex-grow: 1;
                 flex-shrink: 0;
-                flex-grow: 1;
+                flex-basis: 200px;*/
+                flex: 1 0 200px;
             }
 
             #caixaB {
+                /*flex-grow: 2;
                 flex-shrink: 1;
-                flex-grow: 2;
+                flex-basis: 150px;*/
+                flex: 2 1 150px;
             }
 
             #caixaC {
+                /*flex-grow: 1;
                 flex-shrink: 8;
-                flex-grow: 1;
+                flex-basis: auto;*/
+                flex: 1 8 auto;
             }
 
         </style>
