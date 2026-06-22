@@ -11,12 +11,15 @@
     margin-top: 5px;
     flex: 1 1 45px;
   }
+
+  main {
+    width: 97vw;
+  }
 }
 
 /* Mobile */
 @media screen and (max-width: 700px) {
-  header,
-  header nav {
+  header, header nav {
     flex-flow: column wrap;
   }
 
@@ -25,7 +28,7 @@
     flex: 1 1 45px;
   }
 
-  nav a {
+  main, nav a {
     width: 95vw;
   }
 }
